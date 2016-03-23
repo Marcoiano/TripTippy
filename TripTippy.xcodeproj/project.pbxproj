@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		944FB9AB1B66F2D00072DDE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB9AA1B66F2D00072DDE0 /* AppDelegate.swift */; };
+		944FB9B01B66F2D00072DDE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944FB9AF1B66F2D00072DDE0 /* Images.xcassets */; };
+		944FB9BF1B66F2D10072DDE0 /* TripsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB9BE1B66F2D10072DDE0 /* TripsyTests.swift */; };
+		944FB9CB1B66F3A50072DDE0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9C81B66F3A50072DDE0 /* FBSDKCoreKit.framework */; };
+		944FB9CC1B66F3A50072DDE0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9C91B66F3A50072DDE0 /* FBSDKLoginKit.framework */; };
+		944FB9CD1B66F3A50072DDE0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9CA1B66F3A50072DDE0 /* FBSDKShareKit.framework */; };
+		944FB9D31B66F5470072DDE0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9CF1B66F5470072DDE0 /* Bolts.framework */; };
+		944FB9D41B66F5470072DDE0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9D01B66F5470072DDE0 /* Parse.framework */; };
+		944FB9D61B66F5470072DDE0 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9D21B66F5470072DDE0 /* ParseFacebookUtilsV4.framework */; };
+		944FB9D91B66F5790072DDE0 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9D81B66F5790072DDE0 /* Accounts.framework */; };
+		944FB9DB1B66F5810072DDE0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9DA1B66F5810072DDE0 /* AudioToolbox.framework */; };
+		944FB9DD1B66F5870072DDE0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9DC1B66F5870072DDE0 /* CFNetwork.framework */; };
+		944FB9DF1B66F58E0072DDE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9DE1B66F58E0072DDE0 /* CoreGraphics.framework */; };
+		944FB9E11B66F5930072DDE0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9E01B66F5930072DDE0 /* CoreLocation.framework */; };
+		944FB9E31B66F5990072DDE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9E21B66F5990072DDE0 /* QuartzCore.framework */; };
+		944FB9E51B66F59F0072DDE0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9E41B66F59F0072DDE0 /* Security.framework */; };
+		944FB9E71B66F5A40072DDE0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9E61B66F5A40072DDE0 /* Social.framework */; };
+		944FB9E91B66F5A90072DDE0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9E81B66F5A90072DDE0 /* StoreKit.framework */; };
+		944FB9EB1B66F5AF0072DDE0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944FB9EA1B66F5AF0072DDE0 /* SystemConfiguration.framework */; };
+		DF36686B1BB3F39A0090CFD9 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3668691BB3F39A0090CFD9 /* libz.1.dylib */; };
+		DF36686C1BB3F39A0090CFD9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF36686A1BB3F39A0090CFD9 /* libsqlite3.dylib */; };
+		DF428E901BB6F2F20006544A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF428E8C1BB6F2F20006544A /* LaunchScreen.xib */; };
+		DF428E911BB6F2F20006544A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF428E8E1BB6F2F20006544A /* Main.storyboard */; };
+		DF5B16971BBAE059007E6875 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5B16961BBAE059007E6875 /* LoginViewController.swift */; };
+		DF6483E01BF511D1002DF9F4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6483DF1BF511D1002DF9F4 /* SWRevealViewController.m */; };
+		DF7A776C1BF744770060F3F9 /* PlanEventDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A776B1BF744770060F3F9 /* PlanEventDetailsVC.swift */; };
+		DF7A776F1BF744AC0060F3F9 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A776D1BF744AC0060F3F9 /* Favorite.swift */; };
+		DF7A77701BF744AC0060F3F9 /* Favorite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A776E1BF744AC0060F3F9 /* Favorite+CoreDataProperties.swift */; };
+		DF7A77721BF745730060F3F9 /* FavoriteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A77711BF745730060F3F9 /* FavoriteViewCell.swift */; };
+		DF7A77741BF7457A0060F3F9 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A77731BF7457A0060F3F9 /* FavoriteViewController.swift */; };
+		DF7C3B1C1BEB6C98009EDBB5 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C3B1B1BEB6C98009EDBB5 /* ContainerViewController.swift */; };
+		DF7C3B221BEB73D3009EDBB5 /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C3B201BEB73D3009EDBB5 /* SidePanelViewController.swift */; };
+		DF7C3B241BEB73F9009EDBB5 /* SlideOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C3B231BEB73F9009EDBB5 /* SlideOption.swift */; };
+		DF8132341BB9C57D004C9AFE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8132331BB9C57D004C9AFE /* MapKit.framework */; };
+		DF9AC2CB1BEBDD69009998F0 /* MyTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2CA1BEBDD69009998F0 /* MyTripViewController.swift */; };
+		DF9AC2CF1BEBDD7E009998F0 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2CD1BEBDD7E009998F0 /* CityViewController.swift */; };
+		DF9AC2D41BEBDDF3009998F0 /* PlanMustDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2D01BEBDDF3009998F0 /* PlanMustDetailsVC.swift */; };
+		DF9AC2D51BEBDDF3009998F0 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2D11BEBDDF3009998F0 /* DateViewController.swift */; };
+		DF9AC2D61BEBDDF3009998F0 /* MosaicPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2D21BEBDDF3009998F0 /* MosaicPlanViewController.swift */; };
+		DF9AC2D71BEBDDF3009998F0 /* PlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2D31BEBDDF3009998F0 /* PlanTableViewCell.swift */; };
+		DF9AC2D91BEBDE11009998F0 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2D81BEBDE11009998F0 /* PlanViewController.swift */; };
+		DF9AC2E01BEBDE64009998F0 /* DetailsEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2DA1BEBDE64009998F0 /* DetailsEventController.swift */; };
+		DF9AC2E11BEBDE64009998F0 /* DetailsMustViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2DB1BEBDE64009998F0 /* DetailsMustViewController.swift */; };
+		DF9AC2E21BEBDE64009998F0 /* EventsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2DC1BEBDE64009998F0 /* EventsViewCell.swift */; };
+		DF9AC2E31BEBDE64009998F0 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2DD1BEBDE64009998F0 /* EventsViewController.swift */; };
+		DF9AC2E41BEBDE64009998F0 /* MustViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2DE1BEBDE64009998F0 /* MustViewCell.swift */; };
+		DF9AC2E51BEBDE64009998F0 /* MustViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2DF1BEBDE64009998F0 /* MustViewController.swift */; };
+		DF9AC2E91BEBDF01009998F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2E61BEBDF01009998F0 /* Constants.swift */; };
+		DF9AC2EB1BEBDF01009998F0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9AC2E81BEBDF01009998F0 /* Weather.swift */; };
+		DFA549E41BEBD8640025EAEB /* Date+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA549E11BEBD8640025EAEB /* Date+CoreDataProperties.swift */; };
+		DFA549E51BEBD8640025EAEB /* Plan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA549E21BEBD8640025EAEB /* Plan+CoreDataProperties.swift */; };
+		DFA549E61BEBD8640025EAEB /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA549E31BEBD8640025EAEB /* Trip+CoreDataProperties.swift */; };
+		DFA549E81BEBD8990025EAEB /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA549E71BEBD8990025EAEB /* Date.swift */; };
+		DFA549EA1BEBD8F90025EAEB /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA549E91BEBD8F90025EAEB /* Plan.swift */; };
+		DFA549EC1BEBD9200025EAEB /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA549EB1BEBD9200025EAEB /* Trip.swift */; };
+		DFA549EF1BEBD9300025EAEB /* MyTripDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFA549ED1BEBD9300025EAEB /* MyTripDataModel.xcdatamodeld */; };
+		DFA549F11BEBDBA30025EAEB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA549F01BEBDBA30025EAEB /* MainViewController.swift */; };
+		DFA549F31BEBDC0D0025EAEB /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA549F21BEBDC0D0025EAEB /* DateTableViewCell.swift */; };
+		DFA549F61BEBDC6A0025EAEB /* CreateTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA549F41BEBDC6A0025EAEB /* CreateTripViewController.swift */; };
+		DFA549F71BEBDC6A0025EAEB /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA549F51BEBDC6A0025EAEB /* TripTableViewCell.swift */; };
+		DFB476B71BEA4EF4008E9551 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB476B41BEA4EF4008E9551 /* ProfileViewController.swift */; };
+		DFC0953F1BB96943009E3C4D /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC0953E1BB96943009E3C4D /* ParseUI.framework */; };
+		DFDCE3491BBA94EB00C67499 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCE3481BBA94EB00C67499 /* MapViewController.swift */; };
+		F90BF9A6B69737BF226C7FF8 /* Pods_TripTippy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A4617917E1A01C8515A87B /* Pods_TripTippy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		944FB9B91B66F2D10072DDE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 944FB99B1B66F2D00072DDE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 944FB9A21B66F2D00072DDE0;
+			remoteInfo = FacebookSignInExampleWithParse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62A4617917E1A01C8515A87B /* Pods_TripTippy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripTippy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		686C92FDEA4506CEE5A65D66 /* Pods-TripTippy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripTippy.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripTippy/Pods-TripTippy.release.xcconfig"; sourceTree = "<group>"; };
+		944FB9A31B66F2D00072DDE0 /* TripTippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripTippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		944FB9AA1B66F2D00072DDE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		944FB9AF1B66F2D00072DDE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		944FB9B81B66F2D10072DDE0 /* TripTippy.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripTippy.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		944FB9BD1B66F2D10072DDE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tripsy/Info.plist; sourceTree = SOURCE_ROOT; };
+		944FB9BE1B66F2D10072DDE0 /* TripsyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TripsyTests.swift; path = ../TripsytTests/TripsyTests.swift; sourceTree = "<group>"; };
+		944FB9C81B66F3A50072DDE0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		944FB9C91B66F3A50072DDE0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		944FB9CA1B66F3A50072DDE0 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		944FB9CF1B66F5470072DDE0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		944FB9D01B66F5470072DDE0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		944FB9D21B66F5470072DDE0 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		944FB9D81B66F5790072DDE0 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		944FB9DA1B66F5810072DDE0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		944FB9DC1B66F5870072DDE0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		944FB9DE1B66F58E0072DDE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		944FB9E01B66F5930072DDE0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		944FB9E21B66F5990072DDE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		944FB9E41B66F59F0072DDE0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		944FB9E61B66F5A40072DDE0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		944FB9E81B66F5A90072DDE0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		944FB9EA1B66F5AF0072DDE0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		944FB9F01B66F6780072DDE0 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../Bridging-Header.h"; sourceTree = "<group>"; };
+		DF3668691BB3F39A0090CFD9 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /usr/lib/libz.1.dylib; sourceTree = "<absolute>"; };
+		DF36686A1BB3F39A0090CFD9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
+		DF428E8D1BB6F2F20006544A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DF428E8F1BB6F2F20006544A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF5B16961BBAE059007E6875 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DF6483DE1BF511D1002DF9F4 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealVC/SWRevealViewController.h; sourceTree = "<group>"; };
+		DF6483DF1BF511D1002DF9F4 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealVC/SWRevealViewController.m; sourceTree = "<group>"; };
+		DF7A776B1BF744770060F3F9 /* PlanEventDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanEventDetailsVC.swift; path = MyPlan/PlanEventDetailsVC.swift; sourceTree = "<group>"; };
+		DF7A776D1BF744AC0060F3F9 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Favorite.swift; path = CoreData/Favorite.swift; sourceTree = "<group>"; };
+		DF7A776E1BF744AC0060F3F9 /* Favorite+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Favorite+CoreDataProperties.swift"; path = "CoreData/Favorite+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DF7A77711BF745730060F3F9 /* FavoriteViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteViewCell.swift; path = MyFavorites/FavoriteViewCell.swift; sourceTree = "<group>"; };
+		DF7A77731BF7457A0060F3F9 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoriteViewController.swift; path = MyFavorites/FavoriteViewController.swift; sourceTree = "<group>"; };
+		DF7C3B1B1BEB6C98009EDBB5 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerViewController.swift; path = SlideOut/ContainerViewController.swift; sourceTree = "<group>"; };
+		DF7C3B201BEB73D3009EDBB5 /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SidePanelViewController.swift; path = SlideOut/SidePanelViewController.swift; sourceTree = "<group>"; };
+		DF7C3B231BEB73F9009EDBB5 /* SlideOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideOption.swift; path = SlideOut/SlideOption.swift; sourceTree = "<group>"; };
+		DF8132331BB9C57D004C9AFE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DF9AC2CA1BEBDD69009998F0 /* MyTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTripViewController.swift; path = MyTrip/MyTripViewController.swift; sourceTree = "<group>"; };
+		DF9AC2CD1BEBDD7E009998F0 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityViewController.swift; path = MyTrip/CityViewController.swift; sourceTree = "<group>"; };
+		DF9AC2D01BEBDDF3009998F0 /* PlanMustDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanMustDetailsVC.swift; path = MyPlan/PlanMustDetailsVC.swift; sourceTree = "<group>"; };
+		DF9AC2D11BEBDDF3009998F0 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateViewController.swift; path = MyPlan/DateViewController.swift; sourceTree = "<group>"; };
+		DF9AC2D21BEBDDF3009998F0 /* MosaicPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MosaicPlanViewController.swift; path = MyPlan/MosaicPlanViewController.swift; sourceTree = "<group>"; };
+		DF9AC2D31BEBDDF3009998F0 /* PlanTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanTableViewCell.swift; path = MyPlan/PlanTableViewCell.swift; sourceTree = "<group>"; };
+		DF9AC2D81BEBDE11009998F0 /* PlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanViewController.swift; path = MyPlan/PlanViewController.swift; sourceTree = "<group>"; };
+		DF9AC2DA1BEBDE64009998F0 /* DetailsEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsEventController.swift; path = MyPainification/DetailsEventController.swift; sourceTree = "<group>"; };
+		DF9AC2DB1BEBDE64009998F0 /* DetailsMustViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsMustViewController.swift; path = MyPainification/DetailsMustViewController.swift; sourceTree = "<group>"; };
+		DF9AC2DC1BEBDE64009998F0 /* EventsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewCell.swift; path = MyPainification/EventsViewCell.swift; sourceTree = "<group>"; };
+		DF9AC2DD1BEBDE64009998F0 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewController.swift; path = MyPainification/EventsViewController.swift; sourceTree = "<group>"; };
+		DF9AC2DE1BEBDE64009998F0 /* MustViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MustViewCell.swift; path = MyPainification/MustViewCell.swift; sourceTree = "<group>"; };
+		DF9AC2DF1BEBDE64009998F0 /* MustViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MustViewController.swift; path = MyPainification/MustViewController.swift; sourceTree = "<group>"; };
+		DF9AC2E61BEBDF01009998F0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = MyWeather/Constants.swift; sourceTree = "<group>"; };
+		DF9AC2E81BEBDF01009998F0 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weather.swift; path = MyWeather/Weather.swift; sourceTree = "<group>"; };
+		DFA549E11BEBD8640025EAEB /* Date+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+CoreDataProperties.swift"; path = "CoreData/Date+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DFA549E21BEBD8640025EAEB /* Plan+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Plan+CoreDataProperties.swift"; path = "CoreData/Plan+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DFA549E31BEBD8640025EAEB /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Trip+CoreDataProperties.swift"; path = "CoreData/Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DFA549E71BEBD8990025EAEB /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.swift; path = CoreData/Date.swift; sourceTree = "<group>"; };
+		DFA549E91BEBD8F90025EAEB /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Plan.swift; path = CoreData/Plan.swift; sourceTree = "<group>"; };
+		DFA549EB1BEBD9200025EAEB /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trip.swift; path = CoreData/Trip.swift; sourceTree = "<group>"; };
+		DFA549EE1BEBD9300025EAEB /* MyTripDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyTripDataModel.xcdatamodel; sourceTree = "<group>"; };
+		DFA549F01BEBDBA30025EAEB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DFA549F21BEBDC0D0025EAEB /* DateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTableViewCell.swift; path = MyPlan/DateTableViewCell.swift; sourceTree = "<group>"; };
+		DFA549F41BEBDC6A0025EAEB /* CreateTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateTripViewController.swift; path = MyTrip/CreateTripViewController.swift; sourceTree = "<group>"; };
+		DFA549F51BEBDC6A0025EAEB /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripTableViewCell.swift; path = MyTrip/TripTableViewCell.swift; sourceTree = "<group>"; };
+		DFB476B41BEA4EF4008E9551 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = SlideOut/ProfileViewController.swift; sourceTree = "<group>"; };
+		DFC0953E1BB96943009E3C4D /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		DFDCE3481BBA94EB00C67499 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E508A24CDBDD82F90DBE6561 /* Pods-TripTippy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripTippy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripTippy/Pods-TripTippy.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		944FB9A01B66F2D00072DDE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF36686B1BB3F39A0090CFD9 /* libz.1.dylib in Frameworks */,
+				DF36686C1BB3F39A0090CFD9 /* libsqlite3.dylib in Frameworks */,
+				DFC0953F1BB96943009E3C4D /* ParseUI.framework in Frameworks */,
+				944FB9EB1B66F5AF0072DDE0 /* SystemConfiguration.framework in Frameworks */,
+				DF8132341BB9C57D004C9AFE /* MapKit.framework in Frameworks */,
+				944FB9E91B66F5A90072DDE0 /* StoreKit.framework in Frameworks */,
+				944FB9E71B66F5A40072DDE0 /* Social.framework in Frameworks */,
+				944FB9E51B66F59F0072DDE0 /* Security.framework in Frameworks */,
+				944FB9E31B66F5990072DDE0 /* QuartzCore.framework in Frameworks */,
+				944FB9E11B66F5930072DDE0 /* CoreLocation.framework in Frameworks */,
+				944FB9DF1B66F58E0072DDE0 /* CoreGraphics.framework in Frameworks */,
+				944FB9DD1B66F5870072DDE0 /* CFNetwork.framework in Frameworks */,
+				944FB9DB1B66F5810072DDE0 /* AudioToolbox.framework in Frameworks */,
+				944FB9D91B66F5790072DDE0 /* Accounts.framework in Frameworks */,
+				944FB9CC1B66F3A50072DDE0 /* FBSDKLoginKit.framework in Frameworks */,
+				944FB9CB1B66F3A50072DDE0 /* FBSDKCoreKit.framework in Frameworks */,
+				944FB9D61B66F5470072DDE0 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				944FB9CD1B66F3A50072DDE0 /* FBSDKShareKit.framework in Frameworks */,
+				944FB9D31B66F5470072DDE0 /* Bolts.framework in Frameworks */,
+				944FB9D41B66F5470072DDE0 /* Parse.framework in Frameworks */,
+				F90BF9A6B69737BF226C7FF8 /* Pods_TripTippy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944FB9B51B66F2D10072DDE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		944FB99A1B66F2D00072DDE0 = {
+			isa = PBXGroup;
+			children = (
+				DF6483DD1BF51180002DF9F4 /* SWRevealVC */,
+				DF274A411BF0B4BD00F3D770 /* Model */,
+				DF274A431BF0B7D600F3D770 /* View */,
+				DF274A421BF0B5F800F3D770 /* Controller */,
+				944FB9A51B66F2D00072DDE0 /* Tripsy */,
+				DFBDADC41BC2CC2900F45AE2 /* Frameworks */,
+				944FB9D71B66F54E0072DDE0 /* ParseSDK */,
+				944FB9CE1B66F3B00072DDE0 /* FacebookSDK */,
+				944FB9BB1B66F2D10072DDE0 /* TripsyTests */,
+				E0B332C721622601BE4091F8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		944FB9A41B66F2D00072DDE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				944FB9A31B66F2D00072DDE0 /* TripTippy.app */,
+				944FB9B81B66F2D10072DDE0 /* TripTippy.xctest */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		944FB9A51B66F2D00072DDE0 /* Tripsy */ = {
+			isa = PBXGroup;
+			children = (
+				944FB9AA1B66F2D00072DDE0 /* AppDelegate.swift */,
+				944FB9AF1B66F2D00072DDE0 /* Images.xcassets */,
+				DF428E8C1BB6F2F20006544A /* LaunchScreen.xib */,
+				DF428E8E1BB6F2F20006544A /* Main.storyboard */,
+				944FB9A41B66F2D00072DDE0 /* Products */,
+				944FB9A61B66F2D00072DDE0 /* Supporting Files */,
+			);
+			path = Tripsy;
+			sourceTree = "<group>";
+		};
+		944FB9A61B66F2D00072DDE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				944FB9F01B66F6780072DDE0 /* Bridging-Header.h */,
+				944FB9BD1B66F2D10072DDE0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		944FB9BB1B66F2D10072DDE0 /* TripsyTests */ = {
+			isa = PBXGroup;
+			children = (
+				944FB9BE1B66F2D10072DDE0 /* TripsyTests.swift */,
+			);
+			name = TripsyTests;
+			path = FacebookSignInExampleWithParseTests;
+			sourceTree = "<group>";
+		};
+		944FB9CE1B66F3B00072DDE0 /* FacebookSDK */ = {
+			isa = PBXGroup;
+			children = (
+				944FB9C81B66F3A50072DDE0 /* FBSDKCoreKit.framework */,
+				944FB9C91B66F3A50072DDE0 /* FBSDKLoginKit.framework */,
+				944FB9CA1B66F3A50072DDE0 /* FBSDKShareKit.framework */,
+			);
+			name = FacebookSDK;
+			sourceTree = "<group>";
+		};
+		944FB9D71B66F54E0072DDE0 /* ParseSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DFC0953E1BB96943009E3C4D /* ParseUI.framework */,
+				944FB9CF1B66F5470072DDE0 /* Bolts.framework */,
+				944FB9D01B66F5470072DDE0 /* Parse.framework */,
+				944FB9D21B66F5470072DDE0 /* ParseFacebookUtilsV4.framework */,
+			);
+			name = ParseSDK;
+			sourceTree = "<group>";
+		};
+		DF274A411BF0B4BD00F3D770 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF7C3B231BEB73F9009EDBB5 /* SlideOption.swift */,
+				DF56E00A1BE7DF9600038382 /* Weather */,
+				DF6C59BA1BE259A900DB51A4 /* CoreData */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DF274A421BF0B5F800F3D770 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF3807F41BECFF9D00078C27 /* MyFavorites */,
+				DF274A451BF0B8E200F3D770 /* Main */,
+				DF4948AA1BC98376001D391F /* MyTrip */,
+				DFB476B11BEA4DDE008E9551 /* SlideOut */,
+				DF7384F91BDA7BA8002AA63E /* MyPianification */,
+				DF33E2D81BCBEB1600EC5327 /* MyPlan */,
+			);
+			name = Controller;
+			path = Tripsy;
+			sourceTree = "<group>";
+		};
+		DF274A431BF0B7D600F3D770 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A77711BF745730060F3F9 /* FavoriteViewCell.swift */,
+				DF9AC2DE1BEBDE64009998F0 /* MustViewCell.swift */,
+				DF9AC2DC1BEBDE64009998F0 /* EventsViewCell.swift */,
+				DF9AC2D31BEBDDF3009998F0 /* PlanTableViewCell.swift */,
+				DFA549F21BEBDC0D0025EAEB /* DateTableViewCell.swift */,
+				DFA549F51BEBDC6A0025EAEB /* TripTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DF274A451BF0B8E200F3D770 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DFDCE3481BBA94EB00C67499 /* MapViewController.swift */,
+				DFA549F01BEBDBA30025EAEB /* MainViewController.swift */,
+				DF5B16961BBAE059007E6875 /* LoginViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		DF33E2D81BCBEB1600EC5327 /* MyPlan */ = {
+			isa = PBXGroup;
+			children = (
+				DF9AC2D81BEBDE11009998F0 /* PlanViewController.swift */,
+				DF9AC2D11BEBDDF3009998F0 /* DateViewController.swift */,
+				DF9AC2D21BEBDDF3009998F0 /* MosaicPlanViewController.swift */,
+				DF9AC2D01BEBDDF3009998F0 /* PlanMustDetailsVC.swift */,
+				DF7A776B1BF744770060F3F9 /* PlanEventDetailsVC.swift */,
+			);
+			name = MyPlan;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DF3807F41BECFF9D00078C27 /* MyFavorites */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A77731BF7457A0060F3F9 /* FavoriteViewController.swift */,
+			);
+			name = MyFavorites;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DF4948AA1BC98376001D391F /* MyTrip */ = {
+			isa = PBXGroup;
+			children = (
+				DF9AC2CA1BEBDD69009998F0 /* MyTripViewController.swift */,
+				DFA549F41BEBDC6A0025EAEB /* CreateTripViewController.swift */,
+				DF9AC2CD1BEBDD7E009998F0 /* CityViewController.swift */,
+			);
+			name = MyTrip;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DF56E00A1BE7DF9600038382 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				DF9AC2E61BEBDF01009998F0 /* Constants.swift */,
+				DF9AC2E81BEBDF01009998F0 /* Weather.swift */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
+		DF6483DD1BF51180002DF9F4 /* SWRevealVC */ = {
+			isa = PBXGroup;
+			children = (
+				DF6483DE1BF511D1002DF9F4 /* SWRevealViewController.h */,
+				DF6483DF1BF511D1002DF9F4 /* SWRevealViewController.m */,
+			);
+			name = SWRevealVC;
+			sourceTree = "<group>";
+		};
+		DF6C59BA1BE259A900DB51A4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DFA549ED1BEBD9300025EAEB /* MyTripDataModel.xcdatamodeld */,
+				DFA549EB1BEBD9200025EAEB /* Trip.swift */,
+				DFA549E31BEBD8640025EAEB /* Trip+CoreDataProperties.swift */,
+				DFA549E71BEBD8990025EAEB /* Date.swift */,
+				DFA549E11BEBD8640025EAEB /* Date+CoreDataProperties.swift */,
+				DFA549E91BEBD8F90025EAEB /* Plan.swift */,
+				DFA549E21BEBD8640025EAEB /* Plan+CoreDataProperties.swift */,
+				DF7A776D1BF744AC0060F3F9 /* Favorite.swift */,
+				DF7A776E1BF744AC0060F3F9 /* Favorite+CoreDataProperties.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		DF7384F91BDA7BA8002AA63E /* MyPianification */ = {
+			isa = PBXGroup;
+			children = (
+				DF9AC2DF1BEBDE64009998F0 /* MustViewController.swift */,
+				DF9AC2DA1BEBDE64009998F0 /* DetailsEventController.swift */,
+				DF9AC2DB1BEBDE64009998F0 /* DetailsMustViewController.swift */,
+				DF9AC2DD1BEBDE64009998F0 /* EventsViewController.swift */,
+			);
+			name = MyPianification;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DFB476B11BEA4DDE008E9551 /* SlideOut */ = {
+			isa = PBXGroup;
+			children = (
+				DFB476B41BEA4EF4008E9551 /* ProfileViewController.swift */,
+				DF7C3B1B1BEB6C98009EDBB5 /* ContainerViewController.swift */,
+				DF7C3B201BEB73D3009EDBB5 /* SidePanelViewController.swift */,
+			);
+			name = SlideOut;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DFBDADC41BC2CC2900F45AE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				944FB9D81B66F5790072DDE0 /* Accounts.framework */,
+				944FB9DA1B66F5810072DDE0 /* AudioToolbox.framework */,
+				944FB9DC1B66F5870072DDE0 /* CFNetwork.framework */,
+				944FB9DE1B66F58E0072DDE0 /* CoreGraphics.framework */,
+				944FB9E01B66F5930072DDE0 /* CoreLocation.framework */,
+				944FB9E21B66F5990072DDE0 /* QuartzCore.framework */,
+				DF8132331BB9C57D004C9AFE /* MapKit.framework */,
+				944FB9E41B66F59F0072DDE0 /* Security.framework */,
+				944FB9E61B66F5A40072DDE0 /* Social.framework */,
+				944FB9E81B66F5A90072DDE0 /* StoreKit.framework */,
+				944FB9EA1B66F5AF0072DDE0 /* SystemConfiguration.framework */,
+				DF36686A1BB3F39A0090CFD9 /* libsqlite3.dylib */,
+				DF3668691BB3F39A0090CFD9 /* libz.1.dylib */,
+				62A4617917E1A01C8515A87B /* Pods_TripTippy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0B332C721622601BE4091F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E508A24CDBDD82F90DBE6561 /* Pods-TripTippy.debug.xcconfig */,
+				686C92FDEA4506CEE5A65D66 /* Pods-TripTippy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		944FB9A21B66F2D00072DDE0 /* TripTippy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 944FB9C21B66F2D10072DDE0 /* Build configuration list for PBXNativeTarget "TripTippy" */;
+			buildPhases = (
+				EBAC4F2DAD7694DB847F221F /* Check Pods Manifest.lock */,
+				944FB99F1B66F2D00072DDE0 /* Sources */,
+				944FB9A01B66F2D00072DDE0 /* Frameworks */,
+				944FB9A11B66F2D00072DDE0 /* Resources */,
+				1728C36BA1E5CE40D27DEFEB /* Embed Pods Frameworks */,
+				5794976A595A1272C785C056 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TripTippy;
+			productName = FacebookSignInExampleWithParse;
+			productReference = 944FB9A31B66F2D00072DDE0 /* TripTippy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		944FB9B71B66F2D10072DDE0 /* TripTippyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 944FB9C51B66F2D10072DDE0 /* Build configuration list for PBXNativeTarget "TripTippyTests" */;
+			buildPhases = (
+				944FB9B41B66F2D10072DDE0 /* Sources */,
+				944FB9B51B66F2D10072DDE0 /* Frameworks */,
+				944FB9B61B66F2D10072DDE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				944FB9BA1B66F2D10072DDE0 /* PBXTargetDependency */,
+			);
+			name = TripTippyTests;
+			productName = FacebookSignInExampleWithParseTests;
+			productReference = 944FB9B81B66F2D10072DDE0 /* TripTippy.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		944FB99B1B66F2D00072DDE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Marco Tabacchino";
+				TargetAttributes = {
+					944FB9A21B66F2D00072DDE0 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 7DM8HR8YW5;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					944FB9B71B66F2D10072DDE0 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 944FB9A21B66F2D00072DDE0;
+					};
+				};
+			};
+			buildConfigurationList = 944FB99E1B66F2D00072DDE0 /* Build configuration list for PBXProject "TripTippy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 944FB99A1B66F2D00072DDE0;
+			productRefGroup = 944FB9A41B66F2D00072DDE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				944FB9A21B66F2D00072DDE0 /* TripTippy */,
+				944FB9B71B66F2D10072DDE0 /* TripTippyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		944FB9A11B66F2D00072DDE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF428E911BB6F2F20006544A /* Main.storyboard in Resources */,
+				DF428E901BB6F2F20006544A /* LaunchScreen.xib in Resources */,
+				944FB9B01B66F2D00072DDE0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944FB9B61B66F2D10072DDE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1728C36BA1E5CE40D27DEFEB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripTippy/Pods-TripTippy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5794976A595A1272C785C056 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripTippy/Pods-TripTippy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBAC4F2DAD7694DB847F221F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		944FB99F1B66F2D00072DDE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB476B71BEA4EF4008E9551 /* ProfileViewController.swift in Sources */,
+				DF9AC2D71BEBDDF3009998F0 /* PlanTableViewCell.swift in Sources */,
+				DF9AC2CB1BEBDD69009998F0 /* MyTripViewController.swift in Sources */,
+				DF9AC2D41BEBDDF3009998F0 /* PlanMustDetailsVC.swift in Sources */,
+				DF9AC2E51BEBDE64009998F0 /* MustViewController.swift in Sources */,
+				DFA549F31BEBDC0D0025EAEB /* DateTableViewCell.swift in Sources */,
+				DF5B16971BBAE059007E6875 /* LoginViewController.swift in Sources */,
+				DF7C3B221BEB73D3009EDBB5 /* SidePanelViewController.swift in Sources */,
+				DF9AC2E41BEBDE64009998F0 /* MustViewCell.swift in Sources */,
+				DFA549E51BEBD8640025EAEB /* Plan+CoreDataProperties.swift in Sources */,
+				DFA549F11BEBDBA30025EAEB /* MainViewController.swift in Sources */,
+				DFA549EA1BEBD8F90025EAEB /* Plan.swift in Sources */,
+				DF9AC2E21BEBDE64009998F0 /* EventsViewCell.swift in Sources */,
+				944FB9AB1B66F2D00072DDE0 /* AppDelegate.swift in Sources */,
+				DFA549F71BEBDC6A0025EAEB /* TripTableViewCell.swift in Sources */,
+				DFA549E41BEBD8640025EAEB /* Date+CoreDataProperties.swift in Sources */,
+				DF9AC2CF1BEBDD7E009998F0 /* CityViewController.swift in Sources */,
+				DF9AC2E31BEBDE64009998F0 /* EventsViewController.swift in Sources */,
+				DF9AC2E11BEBDE64009998F0 /* DetailsMustViewController.swift in Sources */,
+				DFDCE3491BBA94EB00C67499 /* MapViewController.swift in Sources */,
+				DF9AC2D51BEBDDF3009998F0 /* DateViewController.swift in Sources */,
+				DF7A776C1BF744770060F3F9 /* PlanEventDetailsVC.swift in Sources */,
+				DF9AC2D61BEBDDF3009998F0 /* MosaicPlanViewController.swift in Sources */,
+				DFA549EF1BEBD9300025EAEB /* MyTripDataModel.xcdatamodeld in Sources */,
+				DF7A77741BF7457A0060F3F9 /* FavoriteViewController.swift in Sources */,
+				DF7A776F1BF744AC0060F3F9 /* Favorite.swift in Sources */,
+				DFA549E61BEBD8640025EAEB /* Trip+CoreDataProperties.swift in Sources */,
+				DF6483E01BF511D1002DF9F4 /* SWRevealViewController.m in Sources */,
+				DF7C3B241BEB73F9009EDBB5 /* SlideOption.swift in Sources */,
+				DFA549EC1BEBD9200025EAEB /* Trip.swift in Sources */,
+				DF7C3B1C1BEB6C98009EDBB5 /* ContainerViewController.swift in Sources */,
+				DF9AC2E01BEBDE64009998F0 /* DetailsEventController.swift in Sources */,
+				DF9AC2D91BEBDE11009998F0 /* PlanViewController.swift in Sources */,
+				DF9AC2EB1BEBDF01009998F0 /* Weather.swift in Sources */,
+				DFA549E81BEBD8990025EAEB /* Date.swift in Sources */,
+				DFA549F61BEBDC6A0025EAEB /* CreateTripViewController.swift in Sources */,
+				DF7A77721BF745730060F3F9 /* FavoriteViewCell.swift in Sources */,
+				DF9AC2E91BEBDF01009998F0 /* Constants.swift in Sources */,
+				DF7A77701BF744AC0060F3F9 /* Favorite+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		944FB9B41B66F2D10072DDE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944FB9BF1B66F2D10072DDE0 /* TripsyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		944FB9BA1B66F2D10072DDE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 944FB9A21B66F2D00072DDE0 /* TripTippy */;
+			targetProxy = 944FB9B91B66F2D10072DDE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF428E8C1BB6F2F20006544A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF428E8D1BB6F2F20006544A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		DF428E8E1BB6F2F20006544A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF428E8F1BB6F2F20006544A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		944FB9C01B66F2D10072DDE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		944FB9C11B66F2D10072DDE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		944FB9C31B66F2D10072DDE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E508A24CDBDD82F90DBE6561 /* Pods-TripTippy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Tripsy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Crealab;
+				PRODUCT_NAME = TripTippy;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		944FB9C41B66F2D10072DDE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686C92FDEA4506CEE5A65D66 /* Pods-TripTippy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Tripsy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Crealab;
+				PRODUCT_NAME = TripTippy;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+			};
+			name = Release;
+		};
+		944FB9C61B66F2D10072DDE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FacebookSignInExampleWithParseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kargopolov.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = TripTippy;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripTippy.app/TripTippy";
+			};
+			name = Debug;
+		};
+		944FB9C71B66F2D10072DDE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FacebookSignInExampleWithParseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kargopolov.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = TripTippy;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripTippy.app/TripTippy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		944FB99E1B66F2D00072DDE0 /* Build configuration list for PBXProject "TripTippy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944FB9C01B66F2D10072DDE0 /* Debug */,
+				944FB9C11B66F2D10072DDE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		944FB9C21B66F2D10072DDE0 /* Build configuration list for PBXNativeTarget "TripTippy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944FB9C31B66F2D10072DDE0 /* Debug */,
+				944FB9C41B66F2D10072DDE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		944FB9C51B66F2D10072DDE0 /* Build configuration list for PBXNativeTarget "TripTippyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944FB9C61B66F2D10072DDE0 /* Debug */,
+				944FB9C71B66F2D10072DDE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DFA549ED1BEBD9300025EAEB /* MyTripDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DFA549EE1BEBD9300025EAEB /* MyTripDataModel.xcdatamodel */,
+			);
+			currentVersion = DFA549EE1BEBD9300025EAEB /* MyTripDataModel.xcdatamodel */;
+			name = MyTripDataModel.xcdatamodeld;
+			path = CoreData/MyTripDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 944FB99B1B66F2D00072DDE0 /* Project object */;
+}

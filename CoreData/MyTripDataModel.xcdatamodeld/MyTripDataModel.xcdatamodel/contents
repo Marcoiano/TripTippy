@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="Date" representedClassName=".Date" syncable="YES">
+        <attribute name="dayDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="monthDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weekDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yearDate" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="plans" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Plan" inverseName="date" inverseEntity="Plan" syncable="YES"/>
+        <relationship name="trip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="dates" inverseEntity="Trip" syncable="YES"/>
+    </entity>
+    <entity name="Favorite" representedClassName=".Favorite" syncable="YES">
+        <attribute name="activity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favFlag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="trip" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Trip" inverseName="favs" inverseEntity="Trip" syncable="YES"/>
+    </entity>
+    <entity name="Plan" representedClassName=".Plan" syncable="YES">
+        <attribute name="activity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endH" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startH" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="date" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Date" inverseName="plans" inverseEntity="Date" syncable="YES"/>
+    </entity>
+    <entity name="Trip" representedClassName=".Trip" syncable="YES">
+        <attribute name="arrDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="depDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="destination" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dates" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Date" inverseName="trip" inverseEntity="Date" syncable="YES"/>
+        <relationship name="favs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Favorite" inverseName="trip" inverseEntity="Favorite" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Date" positionX="9" positionY="-66" width="128" height="150"/>
+        <element name="Favorite" positionX="-144" positionY="-108" width="128" height="120"/>
+        <element name="Plan" positionX="-306" positionY="138" width="128" height="135"/>
+        <element name="Trip" positionX="-236" positionY="-258" width="128" height="135"/>
+    </elements>
+</model>
